@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- Configuration of the Ant build system to generate a Jar file --> 
+<project name="TestClient" default="CreateJar_TestClient">
+  <target name="CreateJar_TestClient" description="Create TestClient Jar file">
+        <jar jarfile="TestClient.jar" basedir="." includes="com/client/test/*.class" />
+  </target>
+  <target name="CreateJar_DatabaseClient" description="Create DatabaseClient Jar file">
+        <jar jarfile="DatabaseClient.jar" basedir="." includes="com/client/db/*.class" />
+  </target>
+</project>

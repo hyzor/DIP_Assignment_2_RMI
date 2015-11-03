@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- Configuration of the Ant build system to generate a Jar file --> 
+<project name="TestInterface" default="CreateJar_TestInterface">
+  <target name="CreateJar_TestInterface" description="Create TestInterface Jar file">
+        <jar jarfile="TestInterface.jar" basedir="." includes="com/interf/test/*.class" />
+  </target>
+  <target name="CreateJar_Database" description="Create Database Jar file">
+        <jar jarfile="Database.jar" basedir="." includes="com/interf/db/*.class" />
+  </target>
+</project>
